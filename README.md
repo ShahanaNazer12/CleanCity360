@@ -95,7 +95,7 @@ npm install
 
 Run backend:
 
-npm start
+npm run dev
 
 3️⃣ Frontend Setup
 cd frontend
