@@ -1,0 +1,40 @@
+/* Navbar background */
+.custom-navbar {
+  background-color: #029f56; /* Bootstrap success green */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Brand styling */
+.brand-name {
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+/* Nav links */
+.nav-links .nav-link {
+  color: #e9f5ee !important;
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.nav-links .nav-link:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  border-radius: 8px;
+}
+
+/* Logout color */
+.logout {
+  color: #dc3545 !important;
+  font-weight: 600;
+}
+
+.logout:hover {
+  background-color: #f8d7da;
+}

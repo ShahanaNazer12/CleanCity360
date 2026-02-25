@@ -1,0 +1,49 @@
+.carousel-img {
+  height: 620px;
+  object-fit: cover;
+}
+
+/* Dark overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Content styling */
+.carousel-content {
+  bottom: 25%;
+}
+
+.carousel-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.carousel-content p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+/* Buttons */
+.carousel-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .carousel-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-buttons {
+    flex-direction: column;
+  }
+}
