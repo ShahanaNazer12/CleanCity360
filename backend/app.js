@@ -5,8 +5,15 @@ const cors = require("cors");
 
 // app.use(cors({credentials:true,origin:true}));
 
+// app.use(cors({
+//   origin: "https://cleancity360-frontend.vercel.app",
+//   credentials: true
+// }));
 app.use(cors({
-  origin: "https://cleancity360-frontend.vercel.app",
+  origin: [
+    "http://localhost:5173",
+    "https://cleancity360-frontend.vercel.app"
+  ],
   credentials: true
 }));
 app.use(express.json());
