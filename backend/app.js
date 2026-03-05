@@ -3,19 +3,18 @@ const cookieParser = require("cookie-parser")
 const app = express();
 const cors = require("cors");
 
-app.get("/", (req, res) => {
-  res.send("CleanCity360 API is running ");
-});
+
 
 
 app.use(cors({credentials:true,origin:true}));
 app.use(express.json());
 
-
-
-
 app.use(express.urlencoded({extended:true}))
 app.use(cookieParser());
+
+app.get("/", (req, res) => {
+  res.send("CleanCity360 API is running ");
+});
 
 
 const authRoutes = require("./routes/authRoutes")
