@@ -19,8 +19,6 @@ const Register = ()=>{
     password: yup.string().required("pls enter your password here"),
     
   });
- 
-
   async function handleSubmit(values){
     
     try{
@@ -29,17 +27,14 @@ const Register = ()=>{
         dispatch(userRegister(data.user))
         navigate("/login")
         toast.success(data.message)
-        
-
       }else{
-         toast.success(data.message)
+         toast.success(data.message)``
       }
 
     }catch(error){
        toast.error(error?.response?.data?.message || error?.message)
 
     }
-
 
   }
   

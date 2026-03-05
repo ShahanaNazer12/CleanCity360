@@ -32,11 +32,7 @@ import ViewProfile from './user/ViewProfile';
 import ChangePassword from './user/ChangePassword';
 import ListUsers from './admin/ListUsers';
 
-
-
 function App() {
-  
-
   return (
     <>
     
@@ -54,10 +50,6 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path='/about' element={<AboutUs/>}/>
             <Route path='/contactus' element={<ContactUs/>}/>
-
-            
-     
-
             {/* <Route path="/user/user-dashboard" element={<UserDashboard />} /> */}
             <Route path='/user/user-dashboard' element={<ProtectedRoute requiredRole={["user"]}>
               <UserDashboard/>
@@ -103,8 +95,7 @@ function App() {
         <Footer />
       </div>
     </BrowserRouter>
-    
-    
+       
     </>
   )
 }
