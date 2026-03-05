@@ -112,6 +112,7 @@ function TrackRequests() {
                     <MdDelete
                       size={23}
                       style={{ cursor: "pointer" }}
+                      className=" text-danger "
                       onClick={() => handleShow(req._id)}
                     />
                   </td>

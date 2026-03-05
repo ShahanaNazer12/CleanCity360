@@ -83,6 +83,7 @@ function App() {
             <Route path="/admin/add-worker" element={<AddWorker />} />
             <Route path="/admin/list-worker" element={<ListWorker />} />
             <Route path="/admin/edit-worker/:id" element={<EditWorker />} />
+            
             <Route path="/admin/assign-area" element={<AssignAreaToWorker />} />
             <Route path="/admin/view-all-requests" element={<ViewAllRequests />} />
             <Route path='/admin/list-users' element={<ListUsers/>}/>

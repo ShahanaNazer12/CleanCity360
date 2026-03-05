@@ -25,7 +25,7 @@ const EditRequest = () => {
   const { requests } = useSelector((state) => state.requests);
   console.log(requests)
   const request = requests?.find((rq) => rq._id === id);
-  console.log("requset is", request)
+  console.log("request is", request)
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -71,10 +71,10 @@ const EditRequest = () => {
             enableReinitialize
             validationSchema={schema}
             onSubmit={handleSubmit}
+            
             initialValues={{
-              area: request.area || "",
-              description: request.description || "",
-
+              area: request?.area || "",
+              description: request?.description || "",
             }}
           >
             {({ handleSubmit, handleChange, values, touched, errors }) => (

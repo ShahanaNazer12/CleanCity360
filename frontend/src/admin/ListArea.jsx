@@ -11,8 +11,6 @@ import { useEffect, useState } from "react";
 
 
 function ListArea(){
-
-
   const [fetchArea,setfetchArea] = useState([])
   const [show, setShow] = useState(false);
   const [deleteAreaIndex,setDeleteAreaInsex] = useState(null);
@@ -79,8 +77,8 @@ function ListArea(){
         <tr>
           <th>#</th>
           <th>Area Name</th>
-          <th>Edit</th>
-          <th>Delete</th>
+          <th className=" text-center">Edit</th>
+          <th className=" text-center">Delete</th>
          
         </tr>
       </thead>
@@ -95,7 +93,7 @@ function ListArea(){
             </Link>
             </td>
             
-          <td className=" text-center"><RiDeleteBin2Fill size={20} style={{cursor:"pointer"}} onClick={()=>handleShow(i,a._id)} /></td>
+          <td className=" text-center"><RiDeleteBin2Fill size={20} style={{cursor:"pointer", color:"red"}} onClick={()=>handleShow(i,a._id)} /></td>
           
         </tr>
 

@@ -1,8 +1,6 @@
 # 🌍 Clean City 360
 
-Clean City 360 is a full-stack MERN-based Garbage Management System designed to streamline waste collection operations in urban areas.
-
-The system allows citizens to raise garbage collection requests, workers to manage assigned tasks based on area, and administrators to monitor and control overall sanitation operations.
+Clean City 360 is a full-stack MERN-based Garbage Management System that enables citizens to raise waste collection requests, workers to manage assigned tasks by area, and administrators to monitor and control city sanitation operations efficiently.
 
 ---
 
